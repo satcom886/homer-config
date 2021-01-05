@@ -1,0 +1,120 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+
+title: "MedCloud"
+subtitle: ""
+logo: "assets/logo.png"
+# icon: "fas fa-skull-crossbones" Optional icon
+footer: false
+# footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>'  # set false if you want to hide it.
+
+# Optional message
+message:
+  # url: https://....
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "MedCloud"
+  content: "List of all services hosted on this server. Feel free to look arround!"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links: []
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+# add target: '_blank' to open in a new tab
+services:
+  - name: "Storage"
+    icon: "fas fa-folder"
+    items:
+      - name: "Nextcloud"
+        logo: "assets/custom/nextcloud.png"
+        subtitle: "Self-hosted cloud storage solution"
+        #tag: ""
+        url: "https://mcld.eu/nextcloud"
+      - name: "Syncthing"
+        logo: "assets/custom/syncthing.png"
+        subtitle: "A robust decentralized file sync solution"
+        #tag: ""
+        url: "https://sync.mcld.eu/"
+      - name: "Cryptpad"
+        logo: "assets/custom/cryptpad.png"
+        subtitle: "Collaborative document editing"
+        #tag: ""
+        url: "https://docs.mcld.eu/"
+  - name: "Multimedia"
+    icon: "fas fa-photo-video"
+    items:
+      - name: "Jellyfin"
+        logo: "assets/custom/jellyfin.png"
+        subtitle: "Media server"
+        tag: "movies"
+        url: "https://jellyfin.mcld.eu/"
+      - name: "Airsonic"
+        logo: "assets/custom/airsonic.png"
+        subtitle: "Music collection"
+        tag: "music"
+        url: "https://airsonic.mcld.eu/"
+  - name: "Smart Home"
+    icon: "fas fa-home"
+    items:
+      - name: "Wake-on-LAN"
+        logo: "assets/custom/wol.png"
+        subtitle: "Turn on remote computers!"
+        url: "https://mcld.eu/wol/"
+  - name: "Downloads"
+    icon: "fas fa-download"
+    items:
+      - name: "Transmission"
+        logo: "assets/custom/transmission.png"
+        subtitle: "BitTorrent client"
+        tag: "bittorrent"
+        url: "https://torrent.mcld.eu/"
+      - name: "Radarr"
+        logo: "assets/custom/radarr.png"
+        subtitle: "Automatically download Movies"
+        #tag: "music"
+        url: "https://radarr.mcld.eu/"
+      - name: "Sonarr"
+        logo: "assets/custom/sonarr.png"
+        subtitle: "Automatically download TV Shows"
+        #tag: ""
+        url: "https://sonarr.mcld.eu/"
+      - name: "Lidarr"
+        logo: "assets/custom/lidarr.svg"
+        subtitle: "Automatically download Music"
+        #tag: ""
+        url: "https://lidarr.mcld.eu/"
+      - name: "Bazarr"
+        logo: "assets/custom/bazarr.png"
+        subtitle: "Automatically download Subtitles"
+        #tag: ""
+        url: "https://bazarr.mcld.eu/"
+      - name: "Jackett"
+        logo: "assets/custom/jackett.png"
+        subtitle: "Torrent indexer proxy"
+        #tag: ""
+        url: "https://jackett.mcld.eu/"
+  - name: "Monitoring"
+    icon: "fas fa-heartbeat"
+    items:
+      - name: "Netdata"
+        logo: "assets/custom/netdata.png"
+        subtitle: "Centralized Netdata dashboard"
+        url: "https://mcld.eu/netdata"
+      - name: "Scrutiny"
+        logo: "assets/custom/scrutiny.png"
+        subtitle: "Drive health at a glance"
+        url: "https://scrutiny.mcld.eu/"
+      - name: "Gotify"
+        logo: "assets/custom/gotify.png"
+        subtitle: "Push notifications"
+        url: "https://gotify.mcld.eu/"
+  - name: "Hacking & development"
+    icon: "fas fa-laptop-code"
+    items:
+      - name: "Hashtopolis"
+        logo: "assets/custom/hashtopolis.png"
+        subtitle: "Hashcat distributor"
+        url: "https://mcld.eu/hashtopolis"
